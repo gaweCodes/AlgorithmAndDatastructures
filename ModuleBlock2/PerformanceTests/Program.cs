@@ -9,6 +9,7 @@ namespace PerformanceTests
         private static int _calls;
         private static void Main()
         {
+            Program1.Main1();
             TestFibonacciIterative();
             TestFibonacciRecursive();
             TestTowerOfHanoi();
