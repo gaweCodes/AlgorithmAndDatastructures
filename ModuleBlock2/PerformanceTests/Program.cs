@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
 
 namespace PerformanceTests
 {
     internal class Program
     {
         private static readonly Stopwatch StopWatch = new Stopwatch();
-        private static int _calls = 0;
+        private static int _calls;
         private static void Main()
         {
             TestFibonacciIterative();
