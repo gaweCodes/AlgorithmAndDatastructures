@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowerOfHanoi", "TowerOfHano
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceTests", "PerformanceTests\PerformanceTests.csproj", "{D55F905B-A69F-4A65-A84B-1E0EDC8CFD83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{1C87CE20-0D44-4843-90F2-59AC9524FE9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D55F905B-A69F-4A65-A84B-1E0EDC8CFD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D55F905B-A69F-4A65-A84B-1E0EDC8CFD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D55F905B-A69F-4A65-A84B-1E0EDC8CFD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C87CE20-0D44-4843-90F2-59AC9524FE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C87CE20-0D44-4843-90F2-59AC9524FE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C87CE20-0D44-4843-90F2-59AC9524FE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C87CE20-0D44-4843-90F2-59AC9524FE9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
