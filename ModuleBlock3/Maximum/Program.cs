@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Maximum
 { 
@@ -10,17 +11,18 @@ namespace Maximum
             var s = new int[21];
             var r = new Random();
             for (var index = 0; index < s.Length; index++)
-                s[index] = 5;
+                s[index] = r.Next(int.MinValue,int.MaxValue);
 
-            MaximumRecursive(s, 0, s.Length - 1);
+            Console.WriteLine($"Total {MaximumRecursive(s, 0, s.Length - 1)}");
             Console.WriteLine(_count);
             _count = 0;
+            Console.WriteLine($"Total {MaximumIterative(s)}");
             MaximumIterative(s);
             Console.WriteLine(_count);
             Console.Read();
         }
 
-        private static int MaximumIterative(int[] s)
+        private static int MaximumIterative(IReadOnlyList<int> s)
         {
             var max = s[0];
             foreach (var number in s)
@@ -30,7 +32,7 @@ namespace Maximum
             }
             return max;
         }
-        private static int MaximumRecursive(int[] s, int left, int right)
+        private static int MaximumRecursive(IReadOnlyList<int> s, int left, int right)
         {
             _count++;
             if (left == right)
