@@ -28,6 +28,38 @@
             }
             Count++;
         }
+        public bool InsertAfter(object previousItem, object newItem)
+        {
+            var previousNode = Find(previousItem);
+            if (previousNode == null)
+                return false;
+
+            var newNode = new Node {Item = newItem, Next = previousNode.Next, Prev = previousNode};
+            previousNode.Next = newNode;
+
+            if (newNode.Next != null)
+                newNode.Next.Prev = newNode;
+            else
+                _endNode = newNode;
+            Count++;
+            return true;
+        }
+        public bool InsertBefore(object nextItem, object newItem)
+        {
+            var nextNode = Find(nextItem);
+            if (nextNode == null)
+                return false;
+
+            var newNode = new Node { Item = newItem, Prev = nextNode.Prev, Next = nextNode };
+            nextNode.Prev = newNode;
+
+            if (newNode.Prev != null)
+                newNode.Prev.Next = newNode;
+            else
+                _startNode = newNode;
+            Count++;
+            return true;
+        }
         private Node Find(object item)
         {
             var end = _startNode;
@@ -37,13 +69,9 @@
                     return end;
                 end = end.Next;
             }
-
             return null;
         }
-        public bool Contains(object item)
-        {
-            return Find(item) != null;
-        }
+        public bool Contains(object item) => Find(item) != null;
         public bool Remove(object item)
         {
             var node = Find(item);
@@ -64,10 +92,20 @@
             Count--;
             return true;
         }
-        public object FindByIndex(int index)
+        private Node FindPrevious(object data)
         {
-            return FindByIndexInternal(index)?.Item;
+            Node previousNode = null;
+            var node = _startNode;
+            while (node != null)
+            {
+                if (node.Item.Equals(data))
+                    return previousNode;
+                previousNode = node;
+                node = node.Next;
+            }
+            return null;
         }
+        public object FindByIndex(int index) => FindByIndexInternal(index)?.Item;
         private Node FindByIndexInternal(int index)
         {
             var node = _startNode;
@@ -81,7 +119,6 @@
             }
             return null;
         }
-
         public object this[int index]
         {
             get => FindByIndexInternal(index)?.Item;
@@ -91,6 +128,11 @@
                 if (node != null)
                     node.Item = value;
             }
+        }
+        public void Clear()
+        {
+            _startNode = _endNode = null;
+            Count = 0;
         }
     }
 }

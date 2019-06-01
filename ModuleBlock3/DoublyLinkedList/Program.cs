@@ -18,6 +18,10 @@ namespace DoublyLinkedList
             Console.WriteLine(doublyLinkedList[1]);
             doublyLinkedList[1] = 20;
             Console.WriteLine(doublyLinkedList[1]);
+            doublyLinkedList.Clear();
+            doublyLinkedList.Add(1);
+            doublyLinkedList.Add(3);
+            Console.WriteLine("Insert after: " + doublyLinkedList.InsertBefore(1, 2));
             Console.Read();
         }
     }
