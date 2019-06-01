@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Fact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maximum", "Maximum\Maximum.csproj", "{7E9AA19D-E6A3-4FCE-8406-AF7886AE9468}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexOf", "IndexOf\IndexOf.csproj", "{073AF961-F287-402E-A3AC-92212C11E100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumDifference", "SumDifference\SumDifference.csproj", "{49AAB45F-A75E-45F2-B19C-7D7EF66C5243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{7E9AA19D-E6A3-4FCE-8406-AF7886AE9468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E9AA19D-E6A3-4FCE-8406-AF7886AE9468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E9AA19D-E6A3-4FCE-8406-AF7886AE9468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073AF961-F287-402E-A3AC-92212C11E100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073AF961-F287-402E-A3AC-92212C11E100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073AF961-F287-402E-A3AC-92212C11E100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073AF961-F287-402E-A3AC-92212C11E100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AAB45F-A75E-45F2-B19C-7D7EF66C5243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AAB45F-A75E-45F2-B19C-7D7EF66C5243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AAB45F-A75E-45F2-B19C-7D7EF66C5243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AAB45F-A75E-45F2-B19C-7D7EF66C5243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
