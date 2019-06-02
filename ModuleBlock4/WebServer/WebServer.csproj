@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D4C6ACB-6CE9-42C2-8338-ECEE844138D5}</ProjectGuid>
+    <ProjectGuid>{B2984FCD-25DB-40CD-BE15-42D137208344}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Stack</RootNamespace>
-    <AssemblyName>Stack</AssemblyName>
+    <RootNamespace>WebServer</RootNamespace>
+    <AssemblyName>WebServer</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayList.cs" />
-    <Compile Include="ICollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SinglyLinkedList.cs" />
-    <Compile Include="StackArray.cs" />
-    <Compile Include="StackSinglyLinkedList.cs" />
-    <Compile Include="StackArrayList.cs" />
+    <Compile Include="HttPServer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Queue\Queue.csproj">
+      <Project>{32a09fe2-d862-4905-b690-d13c7341aed6}</Project>
+      <Name>Queue</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
