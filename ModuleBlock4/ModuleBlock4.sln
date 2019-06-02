@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{8D4C6ACB-6CE9-42C2-8338-ECEE844138D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostScriptViewer", "PostScriptViewer\PostScriptViewer.csproj", "{DAEFF68C-F21B-41A5-A850-D4959A397829}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paint", "Paint\Paint.csproj", "{73EDD600-CC59-4098-A879-D486CF037783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D4C6ACB-6CE9-42C2-8338-ECEE844138D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4C6ACB-6CE9-42C2-8338-ECEE844138D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4C6ACB-6CE9-42C2-8338-ECEE844138D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4C6ACB-6CE9-42C2-8338-ECEE844138D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAEFF68C-F21B-41A5-A850-D4959A397829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAEFF68C-F21B-41A5-A850-D4959A397829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAEFF68C-F21B-41A5-A850-D4959A397829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAEFF68C-F21B-41A5-A850-D4959A397829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EDD600-CC59-4098-A879-D486CF037783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EDD600-CC59-4098-A879-D486CF037783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EDD600-CC59-4098-A879-D486CF037783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EDD600-CC59-4098-A879-D486CF037783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EE0D59A-84E9-4C35-8265-0CEE3B355D4F}
+	EndGlobalSection
+EndGlobal
