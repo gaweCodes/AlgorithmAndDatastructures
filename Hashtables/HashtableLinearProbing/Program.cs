@@ -16,7 +16,7 @@ namespace HashtableLinearProbing
             Console.WriteLine("Vorhanden? " + h.ContainsKey(0));
             Console.WriteLine("Vorhanden? " + h.ContainsKey(1));
             Console.WriteLine("Gelöscht? " + h.Remove(1));
-
+            Console.ReadLine();
             h.Clear();
         }
     }
