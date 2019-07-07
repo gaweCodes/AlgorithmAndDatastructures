@@ -87,7 +87,7 @@ namespace AvlTree
                 if (Parent.Left == this) Parent.Left = newRoot;
                 else if (Parent.Right == this) Parent.Right = newRoot;
             }
-            else _tree.root = newRoot;
+            else _tree.Root = newRoot;
             newRoot.Parent = Parent;
             Parent = newRoot;
         }

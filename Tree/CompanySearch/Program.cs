@@ -20,5 +20,6 @@ namespace CompanySearch
                 var company = companies.Read(name);
                 Console.WriteLine(company == null ? "Unternehmen nicht gefunden!" : company + "\n");
             }
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace AvlTree
         {
             TraverseMode = TraverseModeEnum.PreOrder;
         }
-        public AvlTreeNode<T> Root { get; private set; }
+        public AvlTreeNode<T> Root { get; internal set; }
         public int Count { get; private set; }
         public TraverseModeEnum TraverseMode { get; set; }
         public void Add(T item)
